@@ -1,6 +1,11 @@
+import os
 import requests
 
-TOKEN = "6949650386:AAEDL0xtb5r0aM4Rd4hd-YfuQEHKpcxh9DE"
+from dotenv import load_dotenv
+
+load_dotenv
+
+TOKEN = os.getenv('TOKEN_PASS')
 
 
 def handle(message):    # функция отправки собщения в чат
